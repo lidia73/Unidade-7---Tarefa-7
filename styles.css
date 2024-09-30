@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #444;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.colecao {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.objeto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo para impressão */
+@media print {
+    nav {
+        display: none;
+    }
+}
